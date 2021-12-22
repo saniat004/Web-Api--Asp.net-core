@@ -8,16 +8,12 @@ using System.Threading.Tasks;
 
 namespace Crossing.API.Services
 {
-    /// <summary>
-    /// ajslnbakjsgv
-    /// </summary>
-    /// uvibpa
-    /// sd
+    
     public class CountryInfoRepository : ICountryInfoRepository
     {
         private readonly CrossingInfoContext _crossingInfoContext;
 
-        //    d injecting the context 
+        //    injecting the context 
         public CountryInfoRepository(CrossingInfoContext crossingInfoContext)
         {
             _crossingInfoContext = crossingInfoContext ?? throw new ArgumentNullException(nameof(crossingInfoContext));
