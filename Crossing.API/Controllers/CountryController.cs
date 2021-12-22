@@ -14,7 +14,7 @@ namespace Crossing.API.Controllers
     [Route("/")]
     public class CountryController : ControllerBase
     {
-        private readonly ICountryInfoRepository _countryInfoRepository;
+        private readonly ICountryInfoRepository _countryInfoRepository;  //If it's private and readonly, the benefit is that you can't inadvertently change it from another part of that class after it is initialized. The readonly modifier ensures the field can only be given a value during its initialization or in its class constructor.
         private readonly IMapper _mapper;
         //injecting our mapper and repository 
         public CountryController(ICountryInfoRepository countryInfoRepository, IMapper mapper)

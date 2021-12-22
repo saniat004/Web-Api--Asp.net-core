@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace Crossing.API.Controllers
-{
+{//using this to see if our database is created or no 
     [ApiController]
     [Route("/test")]
     public class TestController : ControllerBase
